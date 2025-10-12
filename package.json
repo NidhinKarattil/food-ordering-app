@@ -1,0 +1,22 @@
+{
+  "name": "food-ordering-app",
+  "version": "1.0.0",
+  "description": "A food ordering app using React",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "Nidhin",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
