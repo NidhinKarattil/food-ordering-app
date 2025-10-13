@@ -1,8 +1,5 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import "./App.css";
-
-// const h1 = React.createElement("h1", null, React.createElement("i", null, "Hello World!"));
 
 const HeaderComponent = () => {
   return (
@@ -27,21 +24,65 @@ const HeaderComponent = () => {
   );
 };
 
-const RestaurantContainer = () => {
-    
-}
+const RestaurantCard = ({ resData }) => {
+  const { resName, cuisines, rating, deliveryTime, imgId } = resData;
+  return (
+    <div className="restaurant-card">
+      <img
+        className="restaurant-image"
+        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + imgId}
+        alt="restaurant"
+      />
+      <div className="restaurant-info">
+        <h2>{resName}</h2>
+        <p className="cuisines">{cuisines.join(", ")}</p>
+        <p className="rating">Rating: {rating}</p>
+        <p>{deliveryTime} minutes</p>
+      </div>
+    </div>
+  );
+};
 
-
-const Body = () =>{
-    return (
-        <div className="body-container">
-            <div className="search">
-                <input type="text" placeholder="Search for restaurants and food"/>
-            </div>
-            {/* Restaurant container */}
-        </div>
-    )
-}
+const resData = [
+  {
+    resId: 1,
+    resName: "Bakery World",
+    cuisines: ["Pastry", "Desserts", "Bakery"],
+    rating: "4.2",
+    deliveryTime: "30-40",
+    imgId: "mt2aggiscfl3yviatwng",
+  },
+  {
+    resId: 2,
+    resName: "Adil Hotel",
+    cuisines: ["Biryani", "North Indian", "Mughlai"],
+    rating: "4.2",
+    deliveryTime: "30-40",
+    imgId: "gp1ityra6utvzqn6ghnv",
+  },
+  {
+    resId: 3,
+    resName: "McDonald's",
+    cuisines: ["Burger", "American"],
+    rating: "4.2",
+    deliveryTime: "20-30",
+    imgId: "enj3srsnhbltbom2ovvh",
+  },
+];
+const Body = () => {
+  return (
+    <div className="body-container">
+      <div className="search">
+        <input type="text" placeholder="Search for restaurants and food" />
+      </div>
+      <div className="restaurant-container">
+        {resData.map((restaurant) => (
+          <RestaurantCard key={restaurant.resId} resData={restaurant} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const AppLayout = () => {
   return (
