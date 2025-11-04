@@ -1,3 +1,9 @@
-/node_modules
-/dist
-/.parcel-cache
+# Node
+node_modules/
+npm-debug.log
+.env
+
+# Build
+client/build/
+dist/
+.parcel-cache

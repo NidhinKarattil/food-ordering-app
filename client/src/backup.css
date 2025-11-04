@@ -28,22 +28,31 @@
 .nav-items ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
 }
 
-.nav-items li {
+.nav-items-list {
     margin: 0 15px;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit; /* Removes the default blue color */
+    font-weight: normal;
+    transition: all 0.3s ease;
 }
 
-.nav-items li:hover {
+.nav-items-list:hover {
     text-decoration: underline;
 }
+
 
 .search {
     margin: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .search input {
@@ -52,6 +61,14 @@
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.search button {
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ddd;
 }
 
 .restaurant-container {
@@ -102,4 +119,28 @@
 .restaurant-card .restaurant-info .cuisines {
     font-size: 14px;
     color: #777;
+}
+
+.res-skelton-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.res-skelton {
+    width: 300px;
+    height: 400px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
 }
