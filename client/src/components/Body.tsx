@@ -3,7 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 import RestaurantSkelton from "./RestaurantSkelton";
 import { useEffect, useState } from "react";
 import useOnlineStatus from "../hooks/useOnlineStatus";
-import type { Restaurant } from "./types";
+import type { Restaurant, APIResponse } from "./types";
 
 const Body = () => {
   const [res, setRes] = useState<Restaurant[]>([]);
@@ -28,13 +28,13 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch("http://localhost:4000/restaurants");
-    const res = await data.json();
+    const res: APIResponse = await data.json();
     const resCards =
-      res?.data?.data?.cards[1].card?.card?.gridElements?.infoWithStyle
+      res?.data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants;
 
-    setRes(resCards);
-    setFilteredRes(resCards);
+    setRes(resCards || []);
+    setFilteredRes(resCards || []);
   };
 
   if (!isOnline)

@@ -43,8 +43,9 @@
     "moduleResolution": "bundler",
     "noEmit": true,
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
-  }
+  },
+  "exclude": ["node_modules", "dist", "build", ".parcel-cache"]
 }
