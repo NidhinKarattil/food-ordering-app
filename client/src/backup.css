@@ -1,146 +1,145 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #eee;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
 }
 
 .logo {
-    height: 50px;
+  height: 50px;
 }
 
 .nav-items ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .nav-items-list {
-    margin: 0 15px;
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit; /* Removes the default blue color */
-    font-weight: normal;
-    transition: all 0.3s ease;
+  margin: 0 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit; /* Removes the default blue color */
+  font-weight: normal;
+  transition: all 0.3s ease;
 }
 
 .nav-items-list:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
 .search {
-    margin: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .search input {
-    width: 50%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .search button {
-    padding: 10px 30px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #ddd;
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ddd;
 }
 
 .restaurant-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .restaurant-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 300px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .restaurant-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .restaurant-card .restaurant-info {
-    padding: 15px;
+  padding: 15px;
 }
 
 .restaurant-card .restaurant-info h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .restaurant-card .restaurant-info p {
-    color: #555;
-    font-size: 14px;
-    margin-bottom: 10px;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .restaurant-card .restaurant-info .rating {
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 14px;
-    display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  display: inline-block;
 }
 .restaurant-card .restaurant-info .cuisines {
-    font-size: 14px;
-    color: #777;
+  font-size: 14px;
+  color: #777;
 }
 
 .res-skelton-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .res-skelton {
-    width: 300px;
-    height: 400px;
-    background-color: #ddd;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  width: 300px;
+  height: 400px;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .login-btn {
-    padding: 10px 20px;
-    background-color: #ddd;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
 }

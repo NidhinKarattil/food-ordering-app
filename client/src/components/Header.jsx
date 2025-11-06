@@ -28,7 +28,7 @@ const HeaderComponent = () => {
           <button
             className="px-4 py-2 border border-black dark:border-white dark:bg-black rounded-lg bg-gray-300 cursor-pointer"
             onClick={() => {
-              setLoginText((prev) => (prev === "Login" ? "Logout" : "Login"));
+              setLoginText(prev => (prev === "Login" ? "Logout" : "Login"));
             }}
           >
             {loginText}

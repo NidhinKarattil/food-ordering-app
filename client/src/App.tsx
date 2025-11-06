@@ -1,14 +1,12 @@
 import { lazy } from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import "./App.css";
 import HeaderComponent from "./components/Header";
 import Body from "./components/Body";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import RouterError from "./components/RouterError";
 import RestaurantMenu from "./components/RestaurantMenu";
-// import Groceries from "./components/Groceries";
 const Groceries = lazy(() => import("./components/Groceries"));
 
 const AppLayout = () => {
@@ -50,5 +48,5 @@ const appRouter = createBrowserRouter([
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = createRoot(document.getElementById("root")!);
 root.render(<RouterProvider router={appRouter} />);

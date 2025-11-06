@@ -11,12 +11,14 @@ const RestaurantMenu = () => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch("http://localhost:4000/listRestaurantMenu/" + resId);
+    const data = await fetch(
+      "http://localhost:4000/listRestaurantMenu/" + resId
+    );
     const restaurant = await data.json();
     setResMenu(restaurant?.info);
   };
 
-  if(!resMenu) return <RestaurantSkelton />
+  if (!resMenu) return <RestaurantSkelton />;
 
   return (
     <div>
