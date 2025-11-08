@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import RestaurantSkelton from "./RestaurantSkelton";
+import type { RestaurantMenuType } from "./types";
 
 const RestaurantMenu = () => {
-  const [resMenu, setResMenu] = useState(null);
+  const [resMenu, setResMenu] = useState<RestaurantMenuType | null>(null);
   const { resId } = useParams();
 
   useEffect(() => {

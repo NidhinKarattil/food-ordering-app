@@ -1,6 +1,7 @@
 import { IMG_URL } from "../utils/constants";
+import type { Info } from "./types";
 
-const RestaurantCard = ({ resData }) => {
+const RestaurantCard = ({ resData }: { resData: Info }) => {
   const { name, cuisines, avgRating, sla, cloudinaryImageId } = resData;
   return (
     <div className="w-60 rounded-lg hover:bg-gray-100 overflow-hidden dark:hover:bg-black">

@@ -7,7 +7,7 @@ const RouterError = () => {
       <h1>OOps...!</h1>
       <h2>Something went wrong</h2>
       <h3>
-        {error.status} {error.error.message}
+        {error?.status} {error.error.message}
       </h3>
     </div>
   );

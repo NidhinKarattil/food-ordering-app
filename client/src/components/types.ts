@@ -5,6 +5,10 @@ export type Restaurant = {
 export type Info = {
   name: string;
   id: string;
+  cuisines: string[];
+  avgRating: string;
+  sla: { slaString: string };
+  cloudinaryImageId: string;
 };
 
 export type APIResponse = {
@@ -26,3 +30,7 @@ type RestoCards = {
     };
   };
 };
+
+export type RestaurantMenuType = {
+  name: string
+}
