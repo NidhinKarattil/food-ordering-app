@@ -60,7 +60,7 @@ const Body = () => {
       {res?.length === 0 ? (
         <RestaurantSkelton />
       ) : (
-        <div className="flex flex-wrap gap-8 justify-between">
+        <div className="flex flex-wrap gap-8 justify-start">
           {filteredRes?.map(restaurant => (
             <Link
               to={`restaurant/${restaurant?.info?.id}`}
