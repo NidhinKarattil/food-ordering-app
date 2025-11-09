@@ -1,5 +1,5 @@
-export const LOGO_URL =
+export const LOGO_URL: string =
   "https://thumbs.dreamstime.com/b/food-delivery-logo-template-vector-icon-illustration-170869600.jpg";
 
-export const IMG_URL =
+export const IMG_URL: string =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
